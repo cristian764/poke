@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { useNavigation } from '@react-navigation/native';
 import Pokemon from '../componentes/Pokemon';
@@ -54,10 +54,14 @@ export default function HomeScreen() {
         ))}
       </Picker>
       <Pokemon detallesPokemon={detallesPokemon} cargando={cargando} />
-      <Button
-        title="Ver Evoluciones"
+      
+      {/* Botón personalizado */}
+      <TouchableOpacity
+        style={styles.customButton}
         onPress={() => navigation.navigate('Evoluciones', { pokemon })}
-      />
+      >
+        <Text style={styles.customButtonText}>Ver Evoluciones</Text>
+      </TouchableOpacity>
     </View>
   );
 }

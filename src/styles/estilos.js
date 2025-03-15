@@ -9,7 +9,7 @@ export default StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#ff0000', 
+    color: '#ff0000',
     textAlign: 'center',
     marginVertical: 25,
   },
@@ -19,40 +19,18 @@ export default StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
   },
-  evoText: {
-    fontSize: 18,
-    color: '#fff', 
-    textAlign: 'center',
-    marginVertical: 5,
-  },
-
-  button: {
-    backgroundColor: '#007bff', 
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    marginVertical: 10,
-    alignItems: 'center', 
-  },
-  buttonText: {
-    fontSize: 18,
-    color: '#fff', 
-    fontWeight: 'bold',
-  },
-
   detallesText: {
-    fontSize: 16, 
+    fontSize: 16,
     color: '#f1f1f1', 
     textAlign: 'left',
     marginVertical: 10,
   },
   detallesTitle: {
     fontSize: 24,
-    color: '#ff0000', 
+    color: '#ff0000',
     fontWeight: 'bold',
     marginVertical: 15,
   },
-  
   evoContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -70,7 +48,7 @@ export default StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 5,
-    elevation: 5, 
+    elevation: 5,
   },
   evoImage: {
     width: 100,
@@ -80,8 +58,33 @@ export default StyleSheet.create({
   },
   evoName: {
     fontSize: 18,
-    color: '#fff',
+    color: '#fff', 
     fontWeight: 'bold',
     textAlign: 'center',
+  },
+  pokemonImage: {
+    width: 200,
+    height: 200,
+    resizeMode: 'contain',
+    marginBottom: 20,
+  },
+  customButton: {
+    backgroundColor: '#ff0000', 
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 5, 
+  },
+  customButtonText: {
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: 'bold',
   },
 });
